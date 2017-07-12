@@ -1,16 +1,17 @@
-x = 6;
-y = 3;
+// TASK
+// create a rand() function
+// takes a number
+// returns a number between 0 and that number
 
-if(x > 7 & y > 6){
+// PSEUDOCODE
+// multiply Math.random() by the given number
+// remove the decimal part
+// return the remaning integer
 
-console.log("Hi");
-
-}else if(x > 7 || y > 6){
-
-console.log("Bye");
-
-}else{
-
-console.log("Die");
+function rand(num){
+    // returns random integer between 0 and number
+    var randomNum = num * Math.random();
+    var result = Math.floor(randomNum);
+    return result;
 
 }

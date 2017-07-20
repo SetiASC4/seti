@@ -30,4 +30,4 @@ function Superhero(heroName, realName, superpower){
 }
 
 var superman = new Superhero("Superman", "Clark Kent", ["Flying", "Super Strength"]);
-var spiderman = new Superhero("Spiderman", "Peter Parker", ["Spidey Sense", "Web-Slinging", "Wall Climing", "Super Strength"]);
+var spiderman = new Superhero("Spiderman", "Peter Parker",  ["Spidey Sense", "Web-Singing", "Super Strength"]);

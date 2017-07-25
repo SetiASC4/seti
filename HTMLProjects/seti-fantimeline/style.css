@@ -1,0 +1,16 @@
+body {
+    background: #f7d9b2;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+
+.mainContent{
+    width: 35%;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+

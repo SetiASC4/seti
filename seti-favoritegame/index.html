@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mario Kart Wii</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" //href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <img src="https://i.neoseeker.com/u/p/0/f_MKWiilogom_9c002a4.png">
+
+
+    <div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides" src="https://supermariorun.com/img/stage/mario03.png" style="width:100%">
+        <img class="mySlides" src="https://supermariorun.com/img/index/sec01_chara_luigi.png" style="width:100%">
+        <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/en/d/d5/Peach_%28Super_Mario_3D_World%29.png" style="width:100%">
+        <img class="mySlides" src="https://www.mariowiki.com/images/thumb/2/22/Daisy_MP10.png/200px-Daisy_MP10.png" style="width:100%">
+        <img class="mySlides" src="https://www.mariowiki.com/images/thumb/d/db/SMR_Toad.png/170px-SMR_Toad.png" style="width:100%">
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+    <div>
+        <h1 id="KDName"></h1>
+        <h2 id="KDNumber"></h2>
+    </div>
+
+</body>
+
+</html>

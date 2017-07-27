@@ -1,0 +1,12 @@
+body {
+text-align: center;
+}
+
+#KDName{
+    text-align: center;
+    font-family: Arvo;
+    font-size: 30px;
+}
+#KDNumber{
+    text-align: center;
+}

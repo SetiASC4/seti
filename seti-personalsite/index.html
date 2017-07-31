@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <link rel="stylesheet" href="main.css">
+    <script type="javascript" src="app.js"></script>
+    <script src="app.js"></script>
+
+</head>
+
+<body>
+    <div id="logo">
+        Seti Vega
+    </div>
+    <div id="navbar">
+
+        <ul>
+            <li id="aboutBtn"><a href="#">About</a></li>
+            <li id="hireBtn"><a href="#">Hire</a></li>
+
+            <div id="About" class="about">
+
+                <div class="about-content">
+                    <div class="about-header">
+                        <span class="close">&times;</span>
+                        <h2>About Seti Vega</h2>
+                    </div>
+                    <div class="about-body">
+                        <br />
+                        <br />
+                        <h3>Overview</h3>
+                        <br />
+                        <p>Seti Vega is an kool Kid</p>
+                        <br />
+                        <h3>Technical Skills</h3>
+                        <br />
+                        <p>HTML5</p>
+                        <p>Javascript</p>
+                        <p>CSS</p>
+                    </div>
+                </div>
+
+            </div>
+            <div id="Hire" class="hire">
+
+                <div class="hire-content">
+                    <div class="hire-header">
+                        <span class="close">&times;</span>
+                        <h2>Hire</h2>
+                    </div>
+                    <div class="hire-body">
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+
+            </div>
+            <script>
+                // Get the modal
+                var about = document.getElementById('About');
+
+                // Get the button that opens the modal
+                var aboutbtn = document.getElementById("aboutBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks the button, open the modal 
+                aboutbtn.onclick = function () {
+                    about.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    about.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target == about) {
+                        about.style.display = "none";
+                    }
+                }
+            </script>
+            <script>
+                // Get the modal
+                var hire = document.getElementById('Hire');
+
+                // Get the button that opens the modal
+                var hirebtn = document.getElementById("hireBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("closehire")[0];
+
+                // When the user clicks the button, open the modal 
+                hirebtn.onclick = function () {
+                    hire.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    hire.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target == hire) {
+                        hire.style.display = "none";
+                    }
+                }
+            </script>
+
+            <img class="img-circle" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAz4AAAAJDNlNTI4NWVlLTFlZWMtNGFlNC1hMmU5LTVjYjVlYjAyMDUwYQ.jpg">
+
+
+</body>
+
+</html>

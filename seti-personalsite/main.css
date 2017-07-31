@@ -1,0 +1,257 @@
+body {
+    text-align: center;
+    background: url("http://dash.ga.co/assets/anna-bg.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: helvetica;
+}
+p {
+      font-size: 22px;
+    }
+.about {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+    /* Modal Content */
+
+    .about-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 0px solid #888;
+        width: 600px;
+        height: 600px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+    /* Add Animation */
+
+    @-webkit-keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+
+    @keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+    /* The Close Button */
+
+    .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: gray;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .about-header {
+        padding: 10px 16px;
+        text-align: left;
+        background-color: white;
+        color: black;
+        font-family: Arial;
+        font-size: 15px;
+    }
+
+    .about-body {
+        padding: 10px 16px;
+        color: black;
+        text-align: left;
+        
+    }
+
+    .about-footer {
+        padding: 2px 16px;
+        background-color: white;
+        color: black;
+    }
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300italic);
+
+*{
+margin:auto;
+}
+#logo {
+float:left;
+color:#ecf0f1;
+font-size:55px;
+margin-top:20px;
+margin-left:50px;
+font-family: 'Montserrat', sans-serif;
+}
+#navbar{
+height:100px;
+width:100%;
+border-bottom:10px solid #000000;
+background-color:#000000;
+}
+#navbar ul{
+list-style:none;
+}
+#navbar ul li a{
+text-decoration:none;
+float:left;
+padding:20px 10px;
+text-align:center;
+color:#ecf0f1;
+margin-right:100px;
+margin-top:15px;
+font-size:30px;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+#navbar ul li a:hover{
+background-color: black;
+color: gray;
+}
+#navbar ul li {
+  float:right;
+}
+
+#navbar ul {
+  float: right;
+}
+.hire {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 100px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+    /* Modal Content */
+
+    .hire-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 0px solid #888;
+        width: 600px;
+        height: 600px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+    /* Add Animation */
+
+    @-webkit-keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+
+    @keyframes animatetop {
+        from {
+            top: -300px;
+            opacity: 0
+        }
+        to {
+            top: 0;
+            opacity: 1
+        }
+    }
+    /* The Close Button */
+
+    .closehire {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .closehire:hover,
+    .closehire:focus {
+        color: gray;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .hire-header {
+        padding: 10px 16px;
+        text-align: left;
+        background-color: white;
+        color: black;
+        font-family: Arial;
+        font-size: 15px;
+    }
+
+    .hire-body {
+        padding: 10px 16px;
+        color: black;
+        text-align: left;
+    }
+
+    .hire-footer {
+        padding: 2px 16px;
+        background-color: white;
+        color: black;
+    }
+    .img-circle {
+    border-radius: 50%;
+    margin-top: 200px;
+    margin-right: -250px;
+}

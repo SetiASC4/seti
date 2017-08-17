@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head align=middle>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <header class="header">
+        <div class="container">
+            <h1>Rock, paper, scissors</h1>
+        </div>
+    </header>
+</head>
+
+<input type="image" src="logg.png" name="saveForm" class="btTxt submit" id="saveForm" />
+
+<body align=middle>
+    <div class="main">
+        <div class="container">
+            <section class="content">
+                <button class="play rock" type="button" onclick="play('rock')"><p>Brock</p></button>
+                <button class="play paper" type="button" onclick="play('paper')"><p>Baper</p></button>
+                <button class="play scissors" type="button" onclick="play('scissors')"><p>Sbissors</p></button>
+                <div style="clear:both;"></div>
+                <p><span id="player"></span> <span id="opponent"></span></p>
+                <h2 id="results"></h2>
+            </section>
+            <aside class="aside">
+                <div class="scorebox">
+                    <h2>Score</h2>
+                    <div class="score-num"><span id="score">0</span></div>
+                </div>
+                <button type="reset" id="reset" onclick="reset()">reset scores</button>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

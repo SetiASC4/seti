@@ -1,0 +1,598 @@
+body {
+    background:white url('body-bg.jpg');
+}
+ 
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+
+#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+header {
+	height: 100px;
+	padding: 0 15px;
+}
+#content {
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle {
+	width: 290px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+	width: 290px;
+	padding: 5px 15px;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+h1 {
+color: #33cccc;
+    font-family: verdana;
+    font-size: 300%;
+    text-align: center;
+}
+
+h1.three {
+    border-style: solid;
+    border-width: 2px 10px 4px 20px;
+}
+p {
+text-indent: 0px;
+font-size: 150%
+
+}
+
+p.normal {
+    font-weight: normal;
+}
+
+p.thick {
+    font-weight: bold;
+}
+
+p.thicker {
+    font-weight: 600;
+}
+p.center {
+    text-align: center;
+}
+body {
+    text-align: center;
+    font-weight: bold;
+}
+
+p1 {
+text-indent: 0px;
+font-size: 200%
+
+}
+p1.thicker {
+    font-weight: 900;
+}
+p1 {
+    border-bottom: 6px solid #33cccc;
+    background-color: #33cccc;
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+
+#content {
+	background: #f8f8f8;
+}
+#sidebar {
+	background: #f0efef;
+}
+header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+#pagewrap, header, #content, #middle, #sidebar, footer {
+	border: solid 5px #ccc;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+body {
+    background-image: url("http://media.istockphoto.com/photos/library-background-with-wooden-shelves-full-of-books-picture-id539673892");
+    background-color: #cccccc;
+}
+
+
+body {
+    background:white url('body-bg.jpg');
+}
+ 
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+ 
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px black(0,0,0,0.2);
+    background:black;
+}
+ 
+.menu {
+    width:1000px;
+    margin:0px auto;
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:#33cccc;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+}
+ 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+ 
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px #33cccc(0,0,0,0.4);
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:black;
+}
+ 
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px #33cccc(0,0,0,0.2);
+    background:white;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#33cccc;
+}
+
+#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+header {
+	height: 100px;
+	padding: 0 15px;
+}
+#content {
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle {
+	width: 290px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+	width: 290px;
+	padding: 5px 15px;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+p {
+text-indent: 0px;
+font-size: 150%
+
+}
+
+p.normal {
+    font-weight: normal;
+}
+
+p.thick {
+    font-weight: bold;
+}
+
+p.thicker {
+    font-weight: 600;
+}
+p.center {
+    text-align: center;
+}
+body {
+    text-align: center;
+    font-weight: bold;
+}
+
+p1 {
+text-indent: 0px;
+font-size: 200%
+
+}
+p1.thicker {
+    font-weight: 900;
+}
+
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+
+#content {
+	background: #f8f8f8;
+}
+#sidebar {
+	background: #f0efef;
+}
+header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+#pagewrap, header, #content, #middle, #sidebar, footer {
+	border: solid 5px #ccc;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+body {
+    background-image: url("http://media.istockphoto.com/photos/library-background-with-wooden-shelves-full-of-books-picture-id539673892");
+    background-color: #cccccc;
+}
+
+body {
+    background:white url('body-bg.jpg');
+}
+ 
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+ 
+
+#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+header {
+	height: 100px;
+	padding: 0 15px;
+}
+#content {
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle {
+	width: 290px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+	width: 290px;
+	padding: 5px 15px;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+
+#content {
+	background: #f8f8f8;
+}
+#sidebar {
+	background: #f0efef;
+}
+header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+#pagewrap, header, #content, #middle, #sidebar, footer {
+	border: solid 5px #ccc;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+body {
+    background-image: url("http://media.istockphoto.com/photos/library-background-with-wooden-shelves-full-of-books-picture-id539673892");
+    background-color: #cccccc;
+}
+
+.navbar .nav > li > a {
+    float: none;
+    text-decoration: none;
+    color:  #ddd;
+}
+
+.navbar .nav > li > a:hover {
+    float: none;
+    text-decoration: none;
+    background-color:  black;
+}
+
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+
+.ASH {
+    color: white;
+    font-size: 15px;
+    position: relative;
+    left: -2px;
+    top:-4px;
+}
+
+
+
+

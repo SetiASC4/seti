@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBZGXucV-SLPcLBfzU4i-AJ0i9b0_aSGyM",
+            authDomain: "ashfoundation-3fc0f.firebaseapp.com",
+            databaseURL: "https://ashfoundation-3fc0f.firebaseio.com",
+            projectId: "ashfoundation-3fc0f",
+            storageBucket: "ashfoundation-3fc0f.appspot.com",
+            messagingSenderId: "514144849318"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <h1 class="ASH">ASH Foundation</h1>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="finalproject.html">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">Our Mission</a></li>
+                            <li><a href="curriculum.html">Curriculum</a></li>
+                            <li><a href="founders.html">Founders</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Apply<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfFgi7O0Thzx1cTIyk0MjQNChLAiTZEpQvu4gWm2OVaCiiYjQ/viewform">Mentee</a></li>
+                            <li><a href="https://docs.google.com/forms/d/1Pp5E-pyQch6ZUfqSYAJVpqYPSe57WZywluVno4BoGMI/edit">Mentor</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="sponsor.html"><span class="Sponsor"></span>Sponsor Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <h2>Contact Form</h2>
+    <div class="form-group">
+        <div class="name">
+            <label for="name"> Name:</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="John Doe">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="email">
+            <label for="email"> Email:</label>
+            <input type="text" class="form-control" name="email" id="email" placeholder="johndoe@example.com">
+        </div>
+    </div>
+    <p class="text">
+        <textarea name="text" id="text" placeholder="Write Something to us!"></textarea>
+    </p>
+
+    <p class="submit">
+        <input type="submit" button onclick="updateDB()"></button>
+    </p>
+    <script src="contact.js"></script>
+    </form>
+
+</html>
